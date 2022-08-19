@@ -1,0 +1,7 @@
+Java Launcher: /home/champib/.gradle/jdks/adoptium-17-x64-hotspot-linux/bin/java
+Arguments: '--inJar, /home/champib/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19-41.1.0/forge-1.19-41.1.0-injected.jar, --outJar, /home/champib/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19-41.1.0_mapped_official_1.19.2/forge-1.19-41.1.0_mapped_official_1.19.2.jar, --logFile, accesstransform.log, --atFile, /home/champib/Desktop/FantasyMod/build/_atJar_4/parent_at.cfg'
+Classpath:
+ - /home/champib/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/accesstransformers/8.0.7/accesstransformers-8.0.7-fatjar.jar
+Working directory: /home/champib/Desktop/FantasyMod/build/_atJar_4
+Main class: net.minecraftforge.accesstransformer.TransformerProcessor
+====================================

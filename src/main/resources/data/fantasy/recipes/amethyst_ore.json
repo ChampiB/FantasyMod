@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:stone"
+    },
+    "S": {
+      "item": "fantasy:amethyst"
+    }
+  },
+  "pattern": [
+    "#S#",
+    "S#S",
+    "#S#"
+  ],
+  "result": {
+    "item": "fantasy:amethyst_ore"
+  }
+}

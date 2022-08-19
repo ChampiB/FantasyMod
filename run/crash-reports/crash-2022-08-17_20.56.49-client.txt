@@ -1,0 +1,169 @@
+---- Minecraft Crash Report ----
+// I bet Cylons wouldn't have this problem.
+
+Time: 17/08/2022, 20:56
+Description: Initializing game
+
+net.minecraftforge.fml.ModLoadingException: Fantasy Mod (fantasy) encountered an error during the common_setup event phase
+§7net.minecraftforge.fml.util.ObfuscationReflectionHelper$UnableToFindFieldException: java.lang.NoSuchFieldException: EGGS
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:111) ~[javafmllanguage-1.19-41.1.0.jar%23179!/:?] {}
+	at net.minecraftforge.fml.ModLoader.lambda$postEventWithWrapInModOrder$35(ModLoader.java:315) ~[fmlcore-1.19-41.1.0.jar%23182!/:?] {}
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {}
+	at net.minecraftforge.fml.ModList.forEachModInOrder(ModList.java:225) ~[fmlcore-1.19-41.1.0.jar%23182!/:?] {}
+	at net.minecraftforge.fml.ModLoader.postEventWithWrapInModOrder(ModLoader.java:313) ~[fmlcore-1.19-41.1.0.jar%23182!/:?] {}
+	at net.minecraftforge.registries.RegistryManager.postNewRegistryEvent(RegistryManager.java:156) ~[forge-1.19-41.1.0_mapped_official_1.19.2-recomp.jar%23177%23184!/:?] {re:classloading}
+	at net.minecraftforge.common.ForgeStatesProvider.lambda$new$0(ForgeStatesProvider.java:21) ~[forge-1.19-41.1.0_mapped_official_1.19.2-recomp.jar%23177%23184!/:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.lambda$dispatchAndHandleError$23(ModLoader.java:207) ~[fmlcore-1.19-41.1.0.jar%23182!/:?] {}
+	at java.util.Optional.ifPresent(Optional.java:178) ~[?:?] {}
+	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:207) ~[fmlcore-1.19-41.1.0.jar%23182!/:?] {}
+	at net.minecraftforge.fml.ModLoader.lambda$gatherAndInitializeMods$14(ModLoader.java:185) ~[fmlcore-1.19-41.1.0.jar%23182!/:?] {}
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {}
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:185) ~[fmlcore-1.19-41.1.0.jar%23182!/:?] {}
+	at net.minecraftforge.client.loading.ClientModLoader.lambda$begin$1(ClientModLoader.java:91) ~[forge-1.19-41.1.0_mapped_official_1.19.2-recomp.jar%23177%23184!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraftforge.client.loading.ClientModLoader.lambda$createRunnableWithCatch$4(ClientModLoader.java:111) ~[forge-1.19-41.1.0_mapped_official_1.19.2-recomp.jar%23177%23184!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraftforge.client.loading.ClientModLoader.begin(ClientModLoader.java:91) ~[forge-1.19-41.1.0_mapped_official_1.19.2-recomp.jar%23177%23184!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:454) ~[forge-1.19-41.1.0_mapped_official_1.19.2-recomp.jar%23178!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:170) ~[forge-1.19-41.1.0_mapped_official_1.19.2-recomp.jar%23178!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.ForgeClientUserdevLaunchHandler.lambda$launchService$0(ForgeClientUserdevLaunchHandler.java:25) ~[fmlloader-1.19-41.1.0.jar%2389!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-10.0.8.jar%23101!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-10.0.8.jar%23101!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-10.0.8.jar%23101!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-10.0.8.jar%23101!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-10.0.8.jar%23101!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-10.0.8.jar%23101!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-10.0.8.jar%23101!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) [bootstraplauncher-1.1.2.jar:?] {}
+Caused by: net.minecraftforge.fml.util.ObfuscationReflectionHelper$UnableToFindFieldException: java.lang.NoSuchFieldException: EGGS
+	at net.minecraftforge.fml.util.ObfuscationReflectionHelper.findField(ObfuscationReflectionHelper.java:227) ~[fmlcore-1.19-41.1.0.jar%23182!/:?] {}
+	at net.minecraftforge.fml.util.ObfuscationReflectionHelper.getPrivateValue(ObfuscationReflectionHelper.java:72) ~[fmlcore-1.19-41.1.0.jar%23182!/:?] {}
+	at com.champib.fantasy.item.custom.ModSpawnEggItem.initSpawnEggs(ModSpawnEggItem.java:34) ~[%23183!/:?] {re:classloading}
+	at com.champib.fantasy.events.ModEventBusEvents.onRegisterEntities(ModEventBusEvents.java:24) ~[%23183!/:?] {re:classloading}
+	at com.champib.fantasy.events.__ModEventBusEvents_onRegisterEntities_NewRegistryEvent.invoke(.dynamic) ~[%23183!/:?] {re:classloading,pl:eventbus:B}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:93) ~[eventbus-6.0.0.jar%23100!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-6.0.0.jar%23100!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-6.0.0.jar%23100!/:?] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:107) ~[javafmllanguage-1.19-41.1.0.jar%23179!/:?] {}
+	... 30 more
+Caused by: java.lang.NoSuchFieldException: EGGS
+	at java.lang.Class.getDeclaredField(Class.java:2610) ~[?:?] {}
+	at net.minecraftforge.fml.util.ObfuscationReflectionHelper.findField(ObfuscationReflectionHelper.java:221) ~[fmlcore-1.19-41.1.0.jar%23182!/:?] {}
+	at net.minecraftforge.fml.util.ObfuscationReflectionHelper.getPrivateValue(ObfuscationReflectionHelper.java:72) ~[fmlcore-1.19-41.1.0.jar%23182!/:?] {}
+	at com.champib.fantasy.item.custom.ModSpawnEggItem.initSpawnEggs(ModSpawnEggItem.java:34) ~[%23183!/:?] {re:classloading}
+	at com.champib.fantasy.events.ModEventBusEvents.onRegisterEntities(ModEventBusEvents.java:24) ~[%23183!/:?] {re:classloading}
+	at com.champib.fantasy.events.__ModEventBusEvents_onRegisterEntities_NewRegistryEvent.invoke(.dynamic) ~[%23183!/:?] {re:classloading,pl:eventbus:B}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:93) ~[eventbus-6.0.0.jar%23100!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-6.0.0.jar%23100!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-6.0.0.jar%23100!/:?] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:107) ~[javafmllanguage-1.19-41.1.0.jar%23179!/:?] {}
+	... 30 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:111) ~[javafmllanguage-1.19-41.1.0.jar%23179!/:?] {}
+	at net.minecraftforge.fml.ModLoader.lambda$postEventWithWrapInModOrder$35(ModLoader.java:315) ~[fmlcore-1.19-41.1.0.jar%23182!/:?] {}
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {}
+	at net.minecraftforge.fml.ModList.forEachModInOrder(ModList.java:225) ~[fmlcore-1.19-41.1.0.jar%23182!/:?] {}
+	at net.minecraftforge.fml.ModLoader.postEventWithWrapInModOrder(ModLoader.java:313) ~[fmlcore-1.19-41.1.0.jar%23182!/:?] {}
+	at net.minecraftforge.registries.RegistryManager.postNewRegistryEvent(RegistryManager.java:156) ~[forge-1.19-41.1.0_mapped_official_1.19.2-recomp.jar%23177%23184!/:?] {re:classloading}
+	at net.minecraftforge.common.ForgeStatesProvider.lambda$new$0(ForgeStatesProvider.java:21) ~[forge-1.19-41.1.0_mapped_official_1.19.2-recomp.jar%23177%23184!/:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.lambda$dispatchAndHandleError$23(ModLoader.java:207) ~[fmlcore-1.19-41.1.0.jar%23182!/:?] {}
+	at java.util.Optional.ifPresent(Optional.java:178) ~[?:?] {}
+	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:207) ~[fmlcore-1.19-41.1.0.jar%23182!/:?] {}
+	at net.minecraftforge.fml.ModLoader.lambda$gatherAndInitializeMods$14(ModLoader.java:185) ~[fmlcore-1.19-41.1.0.jar%23182!/:?] {}
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {}
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:185) ~[fmlcore-1.19-41.1.0.jar%23182!/:?] {}
+	at net.minecraftforge.client.loading.ClientModLoader.lambda$begin$1(ClientModLoader.java:91) ~[forge-1.19-41.1.0_mapped_official_1.19.2-recomp.jar%23177%23184!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraftforge.client.loading.ClientModLoader.lambda$createRunnableWithCatch$4(ClientModLoader.java:111) ~[forge-1.19-41.1.0_mapped_official_1.19.2-recomp.jar%23177%23184!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraftforge.client.loading.ClientModLoader.begin(ClientModLoader.java:91) ~[forge-1.19-41.1.0_mapped_official_1.19.2-recomp.jar%23177%23184!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:454) ~[forge-1.19-41.1.0_mapped_official_1.19.2-recomp.jar%23178!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+-- Initialization --
+Details:
+	Modules: 
+Stacktrace:
+	at net.minecraft.client.main.Main.main(Main.java:170) ~[forge-1.19-41.1.0_mapped_official_1.19.2-recomp.jar%23178!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.ForgeClientUserdevLaunchHandler.lambda$launchService$0(ForgeClientUserdevLaunchHandler.java:25) ~[fmlloader-1.19-41.1.0.jar%2389!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-10.0.8.jar%23101!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-10.0.8.jar%23101!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-10.0.8.jar%23101!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-10.0.8.jar%23101!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-10.0.8.jar%23101!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-10.0.8.jar%23101!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-10.0.8.jar%23101!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) [bootstraplauncher-1.1.2.jar:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19
+	Minecraft Version ID: 1.19
+	Operating System: Linux (amd64) version 5.15.0-43-generic
+	Java Version: 17.0.4.1, Amazon.com Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Amazon.com Inc.
+	Memory: 90384568 bytes (86 MiB) / 350224384 bytes (334 MiB) up to 4146069504 bytes (3954 MiB)
+	CPUs: 8
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz
+	Identifier: Intel64 Family 6 Model 142 Stepping 12
+	Microarchitecture: whiskey Lake
+	Frequency (GHz): 1.90
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 8
+	Graphics card #0 name: WhiskeyLake-U GT2 [UHD Graphics 620]
+	Graphics card #0 vendor: Intel Corporation (0x8086)
+	Graphics card #0 VRAM (MB): 256.00
+	Graphics card #0 deviceId: 0x3ea0
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MB): 9954.41
+	Virtual memory used (MB): 15901.97
+	Swap memory total (MB): 2048.00
+	Swap memory used (MB): 2047.57
+	JVM Flags: 0 total; 
+	Launched Version: MOD_DEV
+	Backend library: LWJGL version 3.3.1 build 7
+	Backend API: Mesa Intel(R) UHD Graphics 620 (WHL GT2) GL version 4.6 (Core Profile) Mesa 22.0.5, Intel
+	Window size: <not initialized>
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Type: Client (map_client.txt)
+	CPU: 8x Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz
+	ModLauncher: 10.0.8+10.0.8+main.0ef7e830
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.0.jar eventbus PLUGINSERVICE 
+		fmlloader-1.19-41.1.0.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.19-41.1.0.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.19-41.1.0.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.19-41.1.0.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.19-41.1.0.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.8.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		forge-1.19-41.1.0_mapped_official_1.19.2-recomp.ja|Minecraft                     |minecraft                     |1.19                |COMMON_SET|Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		main                                              |Fantasy Mod                   |fantasy                       |0.0NONE             |COMMON_SET|Manifest: NOSIGNATURE
+		                                                  |Forge                         |forge                         |41.1.0              |COMMON_SET|Manifest: NOSIGNATURE
+	Crash Report UUID: 6ad72bbe-894e-476f-983a-90c5b5a5e38b
+	FML: 41.1
+	Forge: net.minecraftforge:41.1.0
