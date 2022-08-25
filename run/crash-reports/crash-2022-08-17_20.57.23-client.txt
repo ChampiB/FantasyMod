@@ -38,9 +38,9 @@ net.minecraftforge.fml.ModLoadingException: Fantasy Mod (fantasy) encountered an
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-10.0.8.jar%23101!/:?] {}
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) [bootstraplauncher-1.1.2.jar:?] {}
 Caused by: java.lang.ClassCastException: class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
-	at com.champib.fantasy.item.custom.ModSpawnEggItem.initSpawnEggs(ModSpawnEggItem.java:34) ~[%23183!/:?] {re:classloading}
-	at com.champib.fantasy.events.ModEventBusEvents.onRegisterEntities(ModEventBusEvents.java:24) ~[%23183!/:?] {re:classloading}
-	at com.champib.fantasy.events.__ModEventBusEvents_onRegisterEntities_NewRegistryEvent.invoke(.dynamic) ~[%23183!/:?] {re:classloading,pl:eventbus:B}
+	at com.champib.sao.item.custom.ModSpawnEggItem.initSpawnEggs(ModSpawnEggItem.java:34) ~[%23183!/:?] {re:classloading}
+	at com.champib.sao.events.ModEventBusEvents.onRegisterEntities(ModEventBusEvents.java:24) ~[%23183!/:?] {re:classloading}
+	at com.champib.sao.events.__ModEventBusEvents_onRegisterEntities_NewRegistryEvent.invoke(.dynamic) ~[%23183!/:?] {re:classloading,pl:eventbus:B}
 	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:93) ~[eventbus-6.0.0.jar%23100!/:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-6.0.0.jar%23100!/:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-6.0.0.jar%23100!/:?] {}

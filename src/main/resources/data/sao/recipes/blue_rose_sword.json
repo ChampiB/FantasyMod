@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "F": {
+      "item": "sao:frozen_blue_rose"
+    }
+  },
+  "pattern": [
+    " I ",
+    " I ",
+    " F "
+  ],
+  "result": {
+    "item": "minecraft:diamond_sword"
+  }
+}
